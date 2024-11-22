@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ATL_JBED_3d24.iml" filepath="$PROJECT_DIR$/.idea/ATL_JBED_3d24.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentApp/StudentApp.iml" filepath="$PROJECT_DIR$/StudentApp/StudentApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson12/lesson12.iml" filepath="$PROJECT_DIR$/lesson12/lesson12.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson2/lesson2.iml" filepath="$PROJECT_DIR$/lesson2/lesson2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lesson2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lesson2.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lesson2.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lesson2.test.iml" />

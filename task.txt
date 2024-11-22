@@ -1,0 +1,85 @@
+import java.util.Scanner;
+EDEDIN BOLENLERININ SAYIN TAP MESELEN 6-1,2,3,6
+public class CountDivisors {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        int count = 0;
+
+        // For loop to find divisors
+        for (int i = 1; i <= number; i++) {
+            if (number % i == 0) {
+                count++;
+            }
+        }
+
+        System.out.println("The number " + number + " has " + count + " divisors.");
+    }
+}
+=======================================================================================================================
+pascal ucbucagi
+import java.util.Scanner;
+
+public class PascalsTriangle {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows for Pascal's Triangle: ");
+        int rows = scanner.nextInt();
+
+        // For loop to generate rows
+        for (int i = 0; i < rows; i++) {
+            int num = 1;
+            for (int j = 0; j <= i; j++) {
+                System.out.print(num + " ");
+                num = num * (i - j) / (j + 1); // Calculate next number in the row
+            }
+            System.out.println();
+        }
+    }
+}
+===========================================================================================================================
+VURMA CEDVELI
+public class Main {
+  public static void main(String[] args) { 
+    int number = 2;//burda scannerden istifade t
+
+    // Print the multiplication table for the number 2
+    for (int i = 1; i <= 10; i++) {
+         int hasil=(number * i);
+      System.out.println(number + " x " + i + " = " + hasil);
+    }
+  }
+}
+======================================================================================================================
+reqemde bir reqem ne qeder tekrarlanir
+import java.util.Scanner;
+
+public class DigitOccurrences {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        System.out.print("Enter the digit to count: ");
+        int digitToCount = scanner.nextInt();
+
+        int count = 0;
+
+        // While loop to count occurrences of the digit
+        while (number > 0) {
+            int digit = number % 10;
+            if (digit == digitToCount) {
+                count++;
+            }
+            number /= 10;
+        }
+
+        System.out.println("The digit " + digitToCount + " appears " + count + " times.");
+    }
+}
+=====================================================================================
