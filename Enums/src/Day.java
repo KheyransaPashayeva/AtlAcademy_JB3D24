@@ -1,0 +1,4 @@
+// Enum yaradılır
+enum Day {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}

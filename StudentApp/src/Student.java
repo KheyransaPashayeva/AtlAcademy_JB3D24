@@ -6,6 +6,10 @@ public class Student extends Academy {
 
     }
 
+    public Student(String name) {
+        this.name = name;
+    }
+
     public Student(String name, String address, String studentId, String course) {
         super(name, address); // Parent class constructor-u çağırılır
         this.studentId = studentId;
@@ -51,4 +55,22 @@ public class Student extends Academy {
     public void study() {
         System.out.println("Tələbə ID: " + studentId + " kursda: " + course + " oxuyur.");
     }
+
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof Student student)) return false;
+//
+//        if (!getStudentId().equals(student.getStudentId())) return false;
+//        if (!getCourse().equals(student.getCourse())) return false;
+//        return getName().equals(student.getName());
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        int result = getStudentId().hashCode();
+//        result = 31 * result + getCourse().hashCode();
+//        result = 31 * result + getName().hashCode();
+//        return result;
+//    }
 }

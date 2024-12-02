@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Academy {
     private String name;
     private String address;
@@ -12,6 +14,10 @@ public class Academy {
         this.address = address;
         this.students = new Student[10]; // Maksimum 10 tələbə üçün ilkin array
         this.studentCount = 0;
+    }
+
+    public Academy(String name) {
+        this.name = name;
     }
 
     // Getter və Setter metodları
@@ -84,6 +90,27 @@ public class Academy {
                 System.out.println((i + 1) + ". " + students[i].getName() + " (ID: " + students[i].getStudentId() + ")");
             }
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Academy academy)) return false;
+
+        if (studentCount != academy.studentCount) return false;
+        if (!getName().equals(academy.getName())) return false;
+        if (!getAddress().equals(academy.getAddress())) return false;
+        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        return Arrays.equals(students, academy.students);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getName().hashCode();
+        result = 31 * result + getAddress().hashCode();
+        result = 31 * result + Arrays.hashCode(students);
+        result = 31 * result + studentCount;
+        return result;
     }
 }
 

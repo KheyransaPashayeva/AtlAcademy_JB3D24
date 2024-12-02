@@ -11,6 +11,7 @@ public class Teacher extends Academy {
         this.subject = subject;
     }
 
+
     // Getter və Setter metodları
     public String getTeacherId() {
         return teacherId;
@@ -35,5 +36,20 @@ public class Teacher extends Academy {
 
     public void teach() {
         System.out.println("Müəllim ID: " + teacherId + " fənd: " + subject + " tədris edir.");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Teacher teacher)) return false;
+
+        return getSubject().equals(teacher.getSubject());
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getTeacherId().hashCode();
+        result = 31 * result + getSubject().hashCode();
+        return result;
     }
 }
