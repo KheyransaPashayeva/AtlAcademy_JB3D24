@@ -1,3 +1,6 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class Main {
     public static void main(String[] args) {
         Customer customer = new Customer("Hüseyn", "12345", 500);
@@ -25,5 +28,16 @@ public class Main {
         } catch (InvalidAmountException e) {
             System.out.println("Xəta: " + e.getMessage());
         }
+
+
+        LocalDate today = LocalDate.now();
+        int year = today.getYear();        // Cari il
+        int month = today.getMonthValue(); // Cari ay
+        int day = today.getDayOfMonth();   // Cari gün
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        String formattedDate = today.format(formatter);
+
+        System.out.println("Formatlanmış tarix: " + formattedDate); // Məsələn: 02/12/2024
+        System.out.println("İl: " + year + ", Ay: " + month + ", Gün: " + day);
     }
 }

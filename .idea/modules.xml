@@ -3,14 +3,20 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ATL_JBED_3d24.iml" filepath="$PROJECT_DIR$/.idea/ATL_JBED_3d24.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayMethods/ArrayMethods.iml" filepath="$PROJECT_DIR$/ArrayMethods/ArrayMethods.iml" />
       <module fileurl="file://$PROJECT_DIR$/BanckAccountApp/BanckAccountApp.iml" filepath="$PROJECT_DIR$/BanckAccountApp/BanckAccountApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/BankApp/BankApp.iml" filepath="$PROJECT_DIR$/BankApp/BankApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/List/BookApp/BookApp.iml" filepath="$PROJECT_DIR$/List/BookApp/BookApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/DesignPatternApp/DesignPatternApp.iml" filepath="$PROJECT_DIR$/DesignPatternApp/DesignPatternApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/Enums/Enums.iml" filepath="$PROJECT_DIR$/Enums/Enums.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exceptions/Exceptions.iml" filepath="$PROJECT_DIR$/Exceptions/Exceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HotelRoom/HotelRoom.iml" filepath="$PROJECT_DIR$/HotelRoom/HotelRoom.iml" />
       <module fileurl="file://$PROJECT_DIR$/InterfaceTaskApps/InterfaceTaskApps.iml" filepath="$PROJECT_DIR$/InterfaceTaskApps/InterfaceTaskApps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/List/List.iml" filepath="$PROJECT_DIR$/List/List.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LocalDAte/LocalDAte.iml" filepath="$PROJECT_DIR$/LocalDAte/LocalDAte.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProductApp/ProductApp.iml" filepath="$PROJECT_DIR$/ProductApp/ProductApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/StudentApp/StudentApp.iml" filepath="$PROJECT_DIR$/StudentApp/StudentApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TravelApp/TravelApp.iml" filepath="$PROJECT_DIR$/TravelApp/TravelApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson12/lesson12.iml" filepath="$PROJECT_DIR$/lesson12/lesson12.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson2/lesson2.iml" filepath="$PROJECT_DIR$/lesson2/lesson2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lesson2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lesson2.main.iml" />

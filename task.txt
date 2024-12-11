@@ -43,7 +43,7 @@ public class PascalsTriangle {
 }
 ===========================================================================================================================
 VURMA CEDVELI
-public class Main {
+public class ArrSumAverage {
   public static void main(String[] args) { 
     int number = 2;//burda scannerden istifade t
 
@@ -83,3 +83,23 @@ public class DigitOccurrences {
     }
 }
 =====================================================================================
+
+Tələblər:
+Bir oteldə müxtəlif növ otaqlar mövcuddur: Standart, SuiteRoom, və Deluxe.
+Hər bir otağın aşağıdakı ümumi xüsusiyyətləri var:
+Otaq nömrəsi (roomNumber)
+Qiymət (price)
+Rezervasiya vəziyyəti (isBooked - true və ya false)
+Otaq növləri üzrə əlavə xüsusiyyətlər:
+Standart otaq: Bir və ya iki nəfərlik ola bilər (isSingleBed - true və ya false).
+SuiteRoom otaq: Mətbəx (hasKitchen) xüsusiyyəti var.
+Deluxe otaq: Balkonu (hasBalcony) var.
+İstifadəçi funksionallığı:
+Yeni otaq əlavə etmək.
+Mövcud otaqları görüntüləmək (bütün məlumatları göstərmək).
+Otaq rezervasiya etmək (otağın isBooked vəziyyətini true etmək).
+Rezervasiyanı ləğv etmək (otağın isBooked vəziyyətini false etmək).
+Tələblər:
+Encapsulation: Otaq məlumatlarını qoruyun və yalnız getter/setter metodlarından istifadə edin.
+Inheritance və Polymorphism: Müxtəlif otaq tipləri üçün bir baz (base) sinifdən istifadə edin.
+Abstraction: Ümumi otaq xüsusiyyətlərini baz sinifə əlavə edin, hər tip üçün unikal xüsusiyyətləri ayrıca siniflərdə idarə edin.
