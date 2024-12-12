@@ -2,11 +2,21 @@ import java.util.List;
 
 public class Customer {
 private int customerId;
+private String name;
 private List<Tour> reserveTours;
 
-    public Customer(int customerId, List<Tour> reserveTours) {
+    public Customer(int customerId, List<Tour> reserveTours,String name) {
         this.customerId = customerId;
         this.reserveTours = reserveTours;
+        this.name=name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getCustomerId() {
@@ -44,5 +54,19 @@ private List<Tour> reserveTours;
         else {
             System.out.println("Artiq reserve legv olunub");
         }
+    }
+    public void displayDetails() {
+        System.out.println("CustomerID: " + customerId +
+                ",  Name: " + name +
+                ", Reserved tour: " + reserveTours);
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "customerId=" + customerId +
+                ", name='" + name + '\'' +
+                ", reserveTours=" + reserveTours +
+                '}';
     }
 }

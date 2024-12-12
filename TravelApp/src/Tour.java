@@ -1,17 +1,18 @@
-// Base class for Tour
+
 public class Tour {
     private int tourId;
     private String tourName;
     private double price;
     private boolean isReserved;
     private TourPackage tourPackage;
-
     public Tour(int tourId, String tourName, double price, TourPackage tourPackage) {
         this.tourId = tourId;
         this.tourName = tourName;
         this.price = price;
         this.tourPackage = tourPackage;
         this.isReserved = false;
+
+
     }
 
     public int getTourId() {
@@ -58,6 +59,17 @@ public class Tour {
                            ", Price: $" + price +
                            ", Tour Package: " + tourPackage +
                            ", Reserved: " + (isReserved ? "Yes" : "No"));
+    }
+
+    @Override
+    public String toString() {
+        return "Tour{" +
+                "tourId=" + tourId +
+                ", tourName='" + tourName + '\'' +
+                ", price=" + price +
+                ", isReserved=" + isReserved +
+                ", tourPackage=" + tourPackage +
+                '}';
     }
 }
 
